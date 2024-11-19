@@ -75,18 +75,17 @@ python super_resolution.py --model_path realesrgan_x4plus.pth --input_image exam
 Enhanced images will be saved in the results/ directory.
 
 ## Requirements
-Python >= 3.7
-numpy
-torch >= 1.1.0
-opencv-python
-matplotlib
-insightface
-onnxruntime
-realesrgan
-To install all dependencies:
+-Python >= 3.7
+-numpy
+-torch >= 1.1.0
+-opencv-python
+-matplotlib
+-insightface
+-onnxruntime
+-realesrgan
+-To install all dependencies:
 
 bash
-코드 복사
 pip install -r requirements.txt
 Models
 Pre-trained Models
@@ -104,14 +103,15 @@ Some model files are large (e.g., realesrgan_x4plus.pth) and cannot be included 
 
 ## References
 1. DnCNN:
-   *Zhang, Kai; Zuo, Wangmeng; Chen, Yunjin; Meng, Deyu; Zhang, Lei
-"Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising"
-IEEE Transactions on Image Processing, 2017.
-2.Face Swapping:
+   Zhang, Kai; Zuo, Wangmeng; Chen, Yunjin; Meng, Deyu; Zhang, Lei
+   "Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising"
+   IEEE Transactions on Image Processing, 2017.
 
-   *Hugging Face - FaceSwapping Kiddo.
+2.Face Swapping:
+   Hugging Face - FaceSwapping Kiddo.
+   
 3.Super-Resolution:
- *Real-ESRGAN GitHub.
+ Real-ESRGAN GitHub.
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
