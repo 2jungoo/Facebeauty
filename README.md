@@ -68,8 +68,8 @@ Outputs will be saved in the results/ directory.
 
 ## DnCNN (Image Denoising)
 1.Prepare your environment: 
-
-   Ensure you have the main.py script in your project directory.  Additio1.nal utility files can be downloaded from the official DnCNN repository.
+   Place the prepared image in a subfolder (e.g. set12 or a new custom folder) inside the testsets folder.
+   Ensure you have the main_test_dncnn.py script in your project directory.     Additional utility files can be downloaded from the official DnCNN repository.
 
 2.Download required files:
 
@@ -80,7 +80,9 @@ Outputs will be saved in the results/ directory.
   ``` bash
    python main.py --model_name dncnn_25 --testset_name set12 --noise_level_img 25
 ```
+(It may vary depending on GPU performance.)
 
+4.Output directory: Denoised images will be saved in the results/ directory.
 ## Requirements
 ```bash
 pip install -r requirements.txt
