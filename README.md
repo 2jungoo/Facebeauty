@@ -22,8 +22,8 @@ To set up the project, follow these steps:
 Install the required Python packages:
 
 bash
-코드 복사
 pip install -r requirements.txt
+
 Download the necessary models:
 
 Face Swapping Model: Download inswapper_128.onnx from Hugging Face and place it in the project root directory.
@@ -34,13 +34,13 @@ Prepare your input images:
 Place two images in the examples/ folder (e.g., img1.jpg, img2.jpg).
 Run the face swapping script:
 
-bash
-코드 복사
+```bash
+
 python face_swapping.py
 For super-resolution:
 
-bash
-코드 복사
+```bash
+
 python super_resolution.py --model_path realesrgan_x4plus.pth --input_image examples/img1.jpg
 Outputs will be saved in the results/ directory.
 
@@ -62,8 +62,7 @@ torch
 realesrgan
 To install all dependencies:
 
-bash
-코드 복사
+```bash
 pip install -r requirements.txt
 Model Files
 inswapper_128.onnx: Required for face swapping. Download from Hugging Face.
