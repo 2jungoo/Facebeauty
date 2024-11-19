@@ -66,6 +66,7 @@ Enhance an image using realesrgan_x4plus.pth
 
 Outputs will be saved in the results/ directory.
 
+![Example Image](example.jpg)
 ## DnCNN (Image Denoising)
 1.Prepare your environment: 
    Place the prepared image in a subfolder (e.g. set12 or a new custom folder) inside the testsets folder.
@@ -83,6 +84,8 @@ Outputs will be saved in the results/ directory.
 (It may vary depending on GPU performance.)
 
 4.Output directory: Denoised images will be saved in the results/ directory.
+
+![Example Image](example_dncnn.jpg)
 ## Requirements
 ```bash
 pip install -r requirements.txt
