@@ -1,23 +1,24 @@
-# DnCNN-based Image Denoising and Face Swapping Project
+# Facechange wiht high resolution
 
 This repository provides two functionalities:
 1. **Image Denoising** using the **DnCNN model** implemented in PyTorch.
-2. **Face Swapping** using ONNX and InsightFace, with optional super-resolution using `realesrgan_x4plus.pth`.
+2. **Face Swapping** using ONNX and InsightFace, with super-resolution using `realesrgan_x4plus.pth`.
 
 Both components aim to demonstrate state-of-the-art deep learning applications for image processing.
 
 ---
 
 ## Features
-### Image Denoising
-- Utilizes pre-trained DnCNN models for grayscale and color image denoising.
-- Supports adjustable noise levels (e.g., 15, 25, 50).
-- Measures performance metrics like PSNR and SSIM.
 
 ### Face Swapping and Super-Resolution
 - Detects and extracts facial features using `inswapper_128.onnx`.
 - Performs face swapping between two images.
 - Enhances image quality with `realesrgan_x4plus.pth` for super-resolution.
+
+### Image Denoising
+- Utilizes pre-trained DnCNN models for grayscale and color image denoising.
+- Supports adjustable noise levels (e.g., 15, 25, 50).
+- Measures performance metrics like PSNR and SSIM.
 
 ---
 
@@ -76,30 +77,24 @@ Enhanced images will be saved in the results/ directory.
 ```
 
 ## Requirements
--Python >= 3.7
--numpy
--torch >= 1.1.0
--opencv-python
--matplotlib
--insightface
--onnxruntime
--realesrgan
--To install all dependencies:
+optional
+```bash
+pip install -r requirements_DnCNN.txt
+```
 
 ```bash
 pip install -r requirements.txt
 ```
-### Models
+## Models
 ## Pre-trained Models
 1.DnCNN Models:
+   [Available at DnCNN GitHub.](https://github.com/cszn/DnCNN)
 
-Available at DnCNN GitHub.
 2.Face Swapping Model:
+   [Download inswapper_128.onnx from Hugging Face.](https://huggingface.co/kiddobellamy/faceswapping_kiddo)
 
-Download inswapper_128.onnx from Hugging Face.
 3.Super-Resolution Model:
-
-Download realesrgan_x4plus.pth from Real-ESRGAN GitHub Releases.
+   [Download realesrgan_x4plus.pth from Real-ESRGAN GitHub Releases.](https://github.com/xinntao/Real-ESRGAN)
 
 ## Note:
 Some model files are large (e.g., realesrgan_x4plus.pth) and cannot be included in the repository due to GitHub's file size limits. Please download them manually and place them in the appropriate directories.
@@ -111,19 +106,8 @@ Some model files are large (e.g., realesrgan_x4plus.pth) and cannot be included 
    IEEE Transactions on Image Processing, 2017.
 
 2.Face Swapping:
-   Hugging Face - FaceSwapping Kiddo.
+   [Hugging Face - FaceSwapping Kiddo.](https://huggingface.co/kiddobellamy/faceswapping_kiddo)
    
 3.Super-Resolution:
- Real-ESRGAN GitHub.
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+[ Real-ESRGAN GitHub.](https://github.com/xinntao/Real-ESRGAN)
 
-markdown
-
----
-
-### 구성 요약
-- **기능별 사용법**: Image denoising, face swapping, super-resolution 각각의 사용법을 포함.
-- **필요 모델 안내**: DnCNN, `inswapper_128.onnx`, `realesrgan_x4plus.pth` 등 모델 다운로드 경로 포함.
-- **요구사항**: `requirements.txt`에 기반한 라이브러리 명시.
-- **디렉토리 구조 설명**: 파일 배치 및 출력 위치를 명확히 설명.
