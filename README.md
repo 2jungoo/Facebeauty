@@ -85,7 +85,7 @@ Outputs will be saved in the results/ directory.
 
 4.Output directory: Denoised images will be saved in the results/ directory.
 
-![Example Image](example_dncnn.jpg)
+![Example Image](example_dncnn1.jpg)
 ## Requirements
 ```bash
 pip install -r requirements.txt
