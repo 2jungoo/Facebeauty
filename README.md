@@ -18,7 +18,6 @@ Both components aim to demonstrate state-of-the-art deep learning applications f
 ### Image Denoising
 - Utilizes pre-trained DnCNN models for grayscale and color image denoising.
 - Supports adjustable noise levels (e.g., 15, 25, 50).
-- Measures performance metrics like PSNR and SSIM.
 
 ---
 
@@ -37,54 +36,61 @@ Both components aim to demonstrate state-of-the-art deep learning applications f
 
 3.Download the necessary models:
 
-For Face Swapping:
-Download inswapper_128.onnx from Hugging Face and place it in the project root directory.
-For Super-Resolution:
-Download realesrgan_x4plus.pth from Real-ESRGAN GitHub Releases and place it in the project root directory.
-For DnCNN:
-Download DnCNN .pth files (e.g., dncnn_25.pth) and place them in the model_zoo/ directory.
+**For Face Swapping:**
 
+Download inswapper_128.onnx from Hugging Face and place it in the project root directory.
+
+**For Super-Resolution:**
+
+Download realesrgan_x4plus.pth from Real-ESRGAN GitHub Releases and place it in the project root directory.
+
+**For DnCNN:**
+
+Download DnCNN .pth files (e.g., dncnn_25.pth) and place them in the model_zoo/ directory.
+You have to download [DnCNN GitHub Repository.](https://github.com/cszn/DnCNN)
 ## Usage
 
-# Image Denoising
-Customize parameters via command-line arguments:
-
-```bash
-python main.py --model_name dncnn_25 --testset_name set12 --noise_level_img 25
-```
-Additional arguments:
-
---show_img: Display images during processing (True or False).
-Denoised images will be saved in the results/ directory.
-
-## Face Swapping
-1. Prepare input images:
+## Face Swapping & high resolution
+1.Prepare input images:
 
 Place two images in the examples/ folder (e.g., img1.jpg, img2.jpg).
+
 2.Run the face swapping script:
 
 ```bash
-python face_swapping.py
+python facechange_with_high_resolution.py
 ```
-Outputs will be saved in the results/ directory.
 
 Super-Resolution
-Enhance an image using realesrgan_x4plus.pth:
+Enhance an image using realesrgan_x4plus.pth
 
-```bash
-python super_resolution.py --model_path realesrgan_x4plus.pth --input_image examples/img1.jpg
-Enhanced images will be saved in the results/ directory.
+Outputs will be saved in the results/ directory.
+
+## DnCNN (Image Denoising)
+1.Prepare your environment: 
+
+   Ensure you have the main.py script in your project directory.  Additio1.nal utility files can be downloaded from the official DnCNN repository.
+
+2.Download required files:
+
+   Download the required utility files (utils_logger.py, utils_model.py, utils_image.py) and pre-trained models (dncnn_25.pth, etc.) from the [DnCNN GitHub Repository.](https://github.com/cszn/DnCNN)
+   Place the utility files in the utils/ folder and the pre-trained model files in the model_zoo/ folder.
+
+3.Run the DnCNN script: Execute the denoising script using the following command:
+  ``` bash
+   python main.py --model_name dncnn_25 --testset_name set12 --noise_level_img 25
 ```
 
 ## Requirements
+```bash
+pip install -r requirements.txt
+```
+
 optional
 ```bash
 pip install -r requirements_DnCNN.txt
 ```
 
-```bash
-pip install -r requirements.txt
-```
 ## Models
 ## Pre-trained Models
 1.DnCNN Models:
