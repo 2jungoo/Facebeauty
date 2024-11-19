@@ -27,12 +27,13 @@ Both components aim to demonstrate state-of-the-art deep learning applications f
    ```bash
    git clone https://github.com/your-username/image-processing-project.git
    cd image-processing-project
-Install the required Python packages:
+
+2.Install the required Python packages:
 
 bash
-코드 복사
 pip install -r requirements.txt
-Download the necessary models:
+
+3.Download the necessary models:
 
 For Face Swapping:
 Download inswapper_128.onnx from Hugging Face and place it in the project root directory.
