@@ -30,7 +30,7 @@ Both components aim to demonstrate state-of-the-art deep learning applications f
 
 2.Install the required Python packages:
 
-   '''bash
+   ```bash
       pip install -r requirements.txt
 
 3.Download the necessary models:
@@ -41,8 +41,10 @@ For Super-Resolution:
 Download realesrgan_x4plus.pth from Real-ESRGAN GitHub Releases and place it in the project root directory.
 For DnCNN:
 Download DnCNN .pth files (e.g., dncnn_25.pth) and place them in the model_zoo/ directory.
-Usage
-Image Denoising
+
+## Usage
+
+# Image Denoising
 Customize parameters via command-line arguments:
 
 bash
