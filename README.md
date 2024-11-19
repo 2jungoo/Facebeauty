@@ -30,7 +30,7 @@ Both components aim to demonstrate state-of-the-art deep learning applications f
 
 2.Install the required Python packages:
 
-   ```bash
+   bash
       pip install -r requirements.txt
 
 3.Download the necessary models:
@@ -74,21 +74,7 @@ bash
 python super_resolution.py --model_path realesrgan_x4plus.pth --input_image examples/img1.jpg
 Enhanced images will be saved in the results/ directory.
 
-Directory Structure
-lua
-코드 복사
-|-- model_zoo
-|   |-- dncnn_25.pth      # DnCNN model
-|   |-- dncnn_50.pth
-|
-|-- examples
-|   |-- img1.jpg          # Input images for face swapping
-|   |-- img2.jpg
-|
-|-- results
-|   |-- set12_dncnn_25    # Denoised images
-|   |-- swapped_images    # Face swapped images
-Requirements
+## Requirements
 Python >= 3.7
 numpy
 torch >= 1.1.0
@@ -116,19 +102,17 @@ Download realesrgan_x4plus.pth from Real-ESRGAN GitHub Releases.
 Note:
 Some model files are large (e.g., realesrgan_x4plus.pth) and cannot be included in the repository due to GitHub's file size limits. Please download them manually and place them in the appropriate directories.
 
-References
-DnCNN:
-
-Zhang, Kai; Zuo, Wangmeng; Chen, Yunjin; Meng, Deyu; Zhang, Lei
+## References
+1. DnCNN:
+   *Zhang, Kai; Zuo, Wangmeng; Chen, Yunjin; Meng, Deyu; Zhang, Lei
 "Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising"
 IEEE Transactions on Image Processing, 2017.
-Face Swapping:
+2.Face Swapping:
 
-Hugging Face - FaceSwapping Kiddo.
-Super-Resolution:
-
-Real-ESRGAN GitHub.
-License
+   *Hugging Face - FaceSwapping Kiddo.
+3.Super-Resolution:
+ *Real-ESRGAN GitHub.
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 markdown
