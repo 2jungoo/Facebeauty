@@ -30,8 +30,9 @@ Both components aim to demonstrate state-of-the-art deep learning applications f
 
 2.Install the required Python packages:
 
-   bash
+   ```bash
       pip install -r requirements.txt
+   ```
 
 3.Download the necessary models:
 
