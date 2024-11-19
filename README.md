@@ -21,7 +21,7 @@ To set up the project, follow these steps:
    cd face-swapping-and-super-resolution
 Install the required Python packages:
 
-bash
+```bash
 pip install -r requirements.txt
 
 Download the necessary models:
