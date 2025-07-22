@@ -1,4 +1,4 @@
-# Facechange wiht high resolution
+# Facechange with high resolution
 
 This repository provides two functionalities:
 1. **Image Denoising** using the **DnCNN model** implemented in PyTorch.
